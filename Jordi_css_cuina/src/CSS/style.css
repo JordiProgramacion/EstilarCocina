@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../assets/fonts/estiloLetra.woff2) format('woff2'),
+         url(../assets/fonts/estiloLetra.woff) format('woff');
+}
+body {
+    font-family: 'MiFuente', sans-serif;
+}
