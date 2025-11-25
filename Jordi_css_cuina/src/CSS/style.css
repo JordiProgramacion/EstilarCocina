@@ -5,4 +5,53 @@
 }
 body {
     font-family: 'MiFuente', sans-serif;
+    margin: 25px;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    background-color: #F1871B;
+}
+header {
+    display: flex;
+    background-color: #FFF3E0;
+    img {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+    }
+}
+nav {
+
+    background-color: #FFF3E0;
+
+    ul {
+
+       list-style: none;
+
+        li {
+            margin-top: 8px;
+            display: inline-block;
+            margin-left: 25px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
+                transition: color 0.5s, transform 0.5s;
+                
+                &:hover {
+                    color: #F1871B;
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+.construyendo {
+    color: rgb(113, 107, 107);
+}
+main {
+    margin-left: 30px;
+
 }
