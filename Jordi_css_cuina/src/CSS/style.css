@@ -9,11 +9,12 @@ body {
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
-    background-color: #F1871B;
+    background-color: oklch(0.721 0.164 58);
+    
 }
 header {
     display: flex;
-    background-color: #FFF3E0;
+    background-color: oklch(0.976 0.030 83);
     img {
         width: 80px;
         height: 80px;
@@ -22,7 +23,7 @@ header {
 }
 nav {
 
-    background-color: #FFF3E0;
+    background-color: oklch(0.976 0.030 83);
 
     ul {
 
@@ -35,12 +36,12 @@ nav {
 
             a {
                 text-decoration: none;
-                color: black;
+                color: oklch(0 0 0);
                 display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
                 transition: color 0.5s, transform 0.5s;
                 
                 &:hover {
-                    color: #F1871B;
+                    color: oklch(0.721 0.164 58);
                     cursor: pointer;
                     transform: scale(1.2);
                 }
@@ -49,9 +50,30 @@ nav {
     }
 }
 .construyendo {
-    color: rgb(113, 107, 107);
+    color: oklch(0.443 0.012 180);
 }
 main {
     margin-left: 30px;
 
+}
+.imagenesEstilo {
+    display: block;
+    margin: auto;
+    border: 2px solid oklch(0.53 0.12 60);
+    box-shadow: 0 0 10px oklch(0.55 0.12 60);
+    cursor: pointer;
+    transition: scale 0.5s linear;
+
+    &:hover{
+        scale: 1.1;
+
+    }
+}
+details {
+    border: 1px solid oklch(0 0 0);
+    width: 450px;
+    padding: 5px;
+    background-color: oklch(0.721 0.164 58);
+    cursor: pointer;
+    border-radius: 5px;
 }
