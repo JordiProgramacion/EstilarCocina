@@ -56,11 +56,13 @@ main {
     margin-left: 30px;
 
 }
+/*La sombra a la imagen se pone con box-shadow, los 3 numeros son, el primero indica desplazamiento horizontal, 
+el 2 indica despazamiento vertical y el ultimo desenfoque, yo utilizo 10 pixeles de desplazamiento en ambos sentidos y un desenfoque de 20.*/
 .imagenesEstilo {
     display: block;
     margin: auto;
-    border: 2px solid oklch(0.53 0.12 60);
-    box-shadow: 0 0 10px oklch(0.55 0.12 60);
+    border: 2px solid oklch(42.419% 0.09888 58.277);
+    box-shadow: 10px 10px 20px oklch(38.967% 0.08974 59.536);
     cursor: pointer;
     transition: scale 0.5s linear;
 
@@ -128,7 +130,7 @@ footer {
     background-color: oklch(0.976 0.030 83);
     display: flex;
     strong {
-        display: inline-block;
+        display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
         transition: 0.5s;
         &:hover {
             transform: scale(1.05);
