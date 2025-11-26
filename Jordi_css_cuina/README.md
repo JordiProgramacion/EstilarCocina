@@ -9,3 +9,6 @@ La letra que usaremos en nuestra pagina web esta dentro de la carpeta fonts en a
 
 # Imagenes 
 Todas las imagenes en la carpeta imagenes dentro de assets.
+
+# Enlace creadores
+Creado el enlace para el futuro de los creadores de la receta.
