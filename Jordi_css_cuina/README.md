@@ -5,4 +5,7 @@ Proyectos paginas web.
 El logo de la pagina web esta en el archivo logo.png dentro de la carpeta imagenes.
 
 # Fuente de la Pagina Web
-La letra que usaremos en nuestra pagina web esta dentro de la carpeta fonts en assets
+La letra que usaremos en nuestra pagina web esta dentro de la carpeta fonts en assets.
+
+# Imagenes 
+Todas las imagenes en la carpeta imagenes dentro de assets.

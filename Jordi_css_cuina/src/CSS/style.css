@@ -77,3 +77,28 @@ details {
     cursor: pointer;
     border-radius: 5px;
 }
+/*En la etiqueta details van todos los cambios relacionados con el desplegable antes de que se abra, para poder editar cuando ya esta abierto tenemos que usar [open], usado justo
+abajo de details, para summary solo cambiamos el titulo del desplegable, lo editamos subrayandolo y poniendolo en negrita.*/
+details {
+    border: 1px solid oklch(0 0 0);
+    width: 450px;
+    padding: 5px;
+    background-color: oklch(0.721 0.164 58);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+/*Esto es para editar la etiqueta details una vez abierta.*/
+details[open] {
+    filter: brightness(120%);
+    li {
+        font-weight: bold;
+    }
+}
+summary{
+    font-weight: bold;
+}
+details[open] summary{
+    text-decoration: underline;
+    text-underline-offset: 3px
+}
