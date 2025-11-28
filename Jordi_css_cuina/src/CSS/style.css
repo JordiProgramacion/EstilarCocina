@@ -5,7 +5,6 @@
 }
 body {
     font-family: 'MiFuente', sans-serif;
-    margin: 25px;
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
@@ -65,19 +64,11 @@ el 2 indica despazamiento vertical y el ultimo desenfoque, yo utilizo 10 pixeles
     border: 2px solid oklch(42.419% 0.09888 58.277);
     box-shadow: 10px 10px 20px oklch(38.967% 0.08974 59.536);
     cursor: pointer;
-    transition: scale 0.5s linear;
+    transition: transform 0.5s linear;
 
 }
 .imagenesEstilo:hover {
-    scale: 1.1;
-}
-details {
-    border: 1px solid oklch(0 0 0);
-    width: 450px;
-    padding: 5px;
-    background-color: oklch(0.721 0.164 58);
-    cursor: pointer;
-    border-radius: 5px;
+    transform: scale(1.1);
 }
 /*En la etiqueta details van todos los cambios relacionados con el desplegable antes de que se abra, para poder editar cuando ya esta abierto tenemos que usar [open], usado justo
 abajo de details, para summary solo cambiamos el titulo del desplegable, lo editamos subrayandolo y poniendolo en negrita.*/
@@ -102,9 +93,9 @@ summary{
 }
 details[open] summary{
     text-decoration: underline;
-    text-underline-offset: 3px
+    text-underline-offset: 3px;
 }
-section u li a {
+section ul li a {
     text-decoration: none;
     transition: color 0.5s, transform 0.5s;
     color: oklch(55.895% 0.21757 259.319);
@@ -134,6 +125,6 @@ footer strong a {
     color: black;
 }
 footer strong{
-     display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
+    display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
     transition: 0.5s;
 }
