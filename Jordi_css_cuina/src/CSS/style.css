@@ -15,39 +15,39 @@ body {
 header {
     display: flex;
     background-color: oklch(0.976 0.030 83);
-    img {
-        width: 80px;
-        height: 80px;
-        margin-left: 20px;
-    }
 }
+header img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
 nav {
 
     background-color: oklch(0.976 0.030 83);
 
-    ul {
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
 
-       list-style: none;
+    margin-top: 8px;
+    display: inline-block;
+    margin-left: 25px;
+}
+nav ul li a {
 
-        li {
-            margin-top: 8px;
-            display: inline-block;
-            margin-left: 25px;
+    text-decoration: none;
+    color: oklch(0 0 0);
+    display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
+    transition: color 0.5s, transform 0.5s;
+}
+nav ul li a:hover {
+    color: oklch(0.721 0.164 58);
+    cursor: pointer;
+    transform: scale(1.2);
 
-            a {
-                text-decoration: none;
-                color: oklch(0 0 0);
-                display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
-                transition: color 0.5s, transform 0.5s;
-                
-                &:hover {
-                    color: oklch(0.721 0.164 58);
-                    cursor: pointer;
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
 }
 .construyendo {
     color: oklch(0.443 0.012 180);
@@ -59,6 +59,7 @@ main {
 /*La sombra a la imagen se pone con box-shadow, los 3 numeros son, el primero indica desplazamiento horizontal, 
 el 2 indica despazamiento vertical y el ultimo desenfoque, yo utilizo 10 pixeles de desplazamiento en ambos sentidos y un desenfoque de 20.*/
 .imagenesEstilo {
+    width: 480px;
     display: block;
     margin: auto;
     border: 2px solid oklch(42.419% 0.09888 58.277);
@@ -66,10 +67,9 @@ el 2 indica despazamiento vertical y el ultimo desenfoque, yo utilizo 10 pixeles
     cursor: pointer;
     transition: scale 0.5s linear;
 
-    &:hover{
-        scale: 1.1;
-
-    }
+}
+.imagenesEstilo:hover {
+    scale: 1.1;
 }
 details {
     border: 1px solid oklch(0 0 0);
@@ -93,9 +93,9 @@ details {
 /*Esto es para editar la etiqueta details una vez abierta.*/
 details[open] {
     filter: brightness(120%);
-    li {
-        font-weight: bold;
-    }
+}
+details[open] li {
+    font-weight: bold;
 }
 summary{
     font-weight: bold;
@@ -104,24 +104,18 @@ details[open] summary{
     text-decoration: underline;
     text-underline-offset: 3px
 }
-section {
-    ul {
-        li {
-            a {
-                text-decoration: none;
-                transition: color 0.5s, transform 0.5s;
-                color: oklch(55.895% 0.21757 259.319);
-                display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
+section u li a {
+    text-decoration: none;
+    transition: color 0.5s, transform 0.5s;
+    color: oklch(55.895% 0.21757 259.319);
+    display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
+}
+section ul li a:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 
-                &:hover {
-                    font-weight: bold;
-                    transform: scale(1.1);
-                    text-decoration: underline;
-                    text-underline-offset: 5px;
-                }
-            }
-        }
-    }
 }
 #centrarTitulo {
     margin-left: 41.2%;
@@ -129,17 +123,17 @@ section {
 footer {
     background-color: oklch(0.976 0.030 83);
     display: flex;
-    strong {
-        display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
-        transition: 0.5s;
-        &:hover {
-            transform: scale(1.05);
-            cursor: pointer;
-     }
-        a {
-            text-decoration: none;
-            color: black;
-        }
-}
 
+}
+footer strong:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+footer strong a {
+    text-decoration: none;
+    color: black;
+}
+footer strong{
+     display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
+    transition: 0.5s;
 }
