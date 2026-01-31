@@ -1,0 +1,8 @@
+#container {
+    background-color: oklch(0.976 0.030 83);
+    border-radius: 2%;
+    width: 60vh;
+    height: 60vh;
+    margin-left: 33%;
+    margin-top: 9.22%;
+}
