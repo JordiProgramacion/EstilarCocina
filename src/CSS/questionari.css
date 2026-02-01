@@ -1,8 +1,33 @@
-#container {
+/* Centramos el titulo */
+h1 {
+    margin: 5vh 0 0 35%;
+}
+/* Estilo del container del formulario */
+#formulario_container {
     background-color: oklch(0.976 0.030 83);
     border-radius: 2%;
     width: 60vh;
     height: 60vh;
     margin-left: 33%;
-    margin-top: 9.22%;
+    margin-top: 2.5%;
+    box-shadow: 10px 10px 20px oklch(38.967% 0.08974 59.536);
+}
+/* Una mica de marge perquè quedi bé */
+.labels {
+    margin-left: 5%;
+}
+/* Quan es correcte color verd */
+#mail:valid {
+    color: green;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+/* Quan es incorrecte color vermell */
+#mail:invalid {
+    color: red;
+    border: 2px solid red;
+    border-radius: 3px;
+}
+#checkReceptes {
+    margin-left: 12%;
 }
