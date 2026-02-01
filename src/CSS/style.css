@@ -103,6 +103,7 @@ section ul li a:hover {
 #centrarTitulo {
     margin-left: 41.2%;
 }
+/* Utilizamos flex, de esta manera queda mejor puesto y mas limpio el footer */
 footer {
     background-color: oklch(0.976 0.030 83);
     display: flex;

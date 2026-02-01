@@ -34,7 +34,7 @@
                     Nom:
                     <!-- Definimos que el mínimo sea 2 caracteres y el máximo 100, damos información a los lectores de pantalla con el
                      placeholder -->
-                    <input type="text" name="nom" id="nom" minlength="2" maxlength="100" placeholder="Nom..." required>
+                    <input type="text" name="nom" id="nom" minlength="2" maxlength="100" placeholder="Nom..." required size="13px">
                 </label>
                 <label>
                     Cognom 1:
@@ -122,14 +122,22 @@
             <br>
             <input type="checkbox" nom="privacitat" id="privacitat" class="labels">
             <label for="privacitat">
+                <!-- Important posar target _blank y el rel per obrirlo en una nova pestanya i no donar informació -->
                 <a href="https://www.pccomponentes.com/privacidad?srsltid=AfmBOorfoN3JsSS8BRzTkkNq5-q1c6gBDszhKcAywHKBRgTQ8Pawhg8V"
                 rel="noopener noreferrer" target="_blank" >Política de privacitat</a>
             </label>
             <input type="checkbox" nom="utilitat" id="utilitat" class="labels">
             <label for="utilitat">
                 <a href="https://www.pccomponentes.com/condiciones-de-compra?srsltid=AfmBOorPk9OSso0QbPnZ4IRcY8VbTfhgj9K6rKZBzbqspw1NzoFX3_x2"
-                   rel="noopener noreferrer" target="_blank" >Política de privacitat</a>
+                   rel="noopener noreferrer" target="_blank" >Termes d'utilitat</a>
             </label>
+            <input type="checkbox" id="notificacio" name="notificacio" class="labels">
+            <label for="notificacio">Vols rebre notificacions al correu?</label>
+            <div id="container_boton_registro" >
+                <!-- Utilitzem type reset per borrar tot i submit per quan enviem -->
+                <button class="botones" type="reset">Esborrar</button>
+                <button class="botones" id="registro" type="submit">Completar el registre</button>
+            </div>
 
         </form>
     </div>
