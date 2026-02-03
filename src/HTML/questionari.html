@@ -24,45 +24,43 @@
         </nav>
     </header>
 
-    <h1>Formulari de registre</h1>
     <div id="formulario_container">
         <form autocomplete="off">
-
-            <div>
+            <br>
+            <h1>Formulari de registre</h1>
+            <div id="formularioRelleno">
                 <br>
-                <label class="labels">
+                <label for="nom">
                     Nom:
                     <!-- Definimos que el mínimo sea 2 caracteres y el máximo 100, damos información a los lectores de pantalla con el
                      placeholder -->
-                    <input type="text" name="nom" id="nom" minlength="2" maxlength="100" placeholder="Nom..." required size="13px">
+                    <input class="inputTexto" type="text" name="nom" id="nom" minlength="2" maxlength="100" placeholder="Nom..." required>
                 </label>
-                <label>
+                <label for="cognom1">
                     Cognom 1:
-                    <input type="text" name="cognom1" id="cognom1" minlength="2" maxlength="100" placeholder="1r cognom" required size="17px">
+                    <input class="inputTexto" type="text" name="cognom1" id="cognom1" minlength="2" maxlength="100" placeholder="1r cognom" required>
                 </label>
-                <label class="labels">
+                <label for="cognom2">
                     Cognom 2:
-                    <input type="text" name="cognom2" id="cognom2" minlength="2" maxlength="100" placeholder="2n cognom" required>
+                    <input class="inputTexto" type="text" name="cognom2" id="cognom2" minlength="2" maxlength="100" placeholder="2n cognom" required>
                 </label>
-                <label>
+                <label for="edat">
                     Edat:
-                    <input type="number" name="edat" id="edat" min="12" max="122" placeholder="Edat..." required>
+                    <input class="inputTexto" type="number" name="edat" id="edat" min="12" max="122" placeholder="Edat..." required>
                 </label>
-            </div>
-            <label for="mail" class="labels">
+            <label for="mail">
                 Email:
-                <input type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required size="45px"
+                <input class="inputTexto" type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
                        placeholder="elteumail@gmail.com">
             </label>
-            <label for="pass" class="labels">
+            <label for="pass">
                 Password:
-                <input type="password" id="pass" pattern="[A-Za-z0-9]{8}" placeholder="secret12">
+                <input class="inputTexto" type="password" id="pass" pattern="[A-Za-z0-9]{8}" placeholder="secret12">
             </label>
-            <div>
-                <label class="labels">
+                <label>
                     Escull Opció:
                     <!-- Select pel generè -->
-                    <select name="op" id="opcions">
+                    <select class="inputTexto" name="op" id="opcions">
                         <!-- Selected per definir l'opció per defecte -->
                         <option value="" selected>--Escull Opció--</option>
                         <option value="home">Home</option>
@@ -95,43 +93,59 @@
                     </select>
                 </label>
             </div>
-            <div>
-                <br>
-                <label class="labels" id="checkReceptes" >
+                <label id="checkReceptes" >
                     Famílies de receptes que més t'agradin:
-                    <br>
                 </label>
-                <br>
-                <input class="labels" type="checkbox" id="vegano" name="vegano">
-                <label for="vegano">Veganes</label>
-                <input type="checkbox" id="cassola" name="cassola">
-                <label for="cassola">Cassola</label>
-                <input type="checkbox" id="peix" name="peix">
-                <label for="peix">Peix</label>
-                <input type="checkbox" id="carn" name="carn">
-                <label for="carn">Carn</label>
-                <input type="checkbox" id="cassola" name="cassola">
-                <label for="cassola">Cassola</label>
-                <input class="labels" type="checkbox" id="postres" name="postres">
-                <label for="postres">Postres</label>
-                <input type="checkbox" id="dolc" name="dolc">
-                <label for="dolc">Dolç</label>
-                <input type="checkbox" id="salat" name="salat">
-                <label for="salat">Salat</label>
+            <div class="opciones" >
+                <!--  Possible br para centrar todo-->
+                <div>
+                    <input type="checkbox" id="vegano" name="vegano">
+                    <label for="vegano">Veganes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cassola" name="cassola">
+                    <label for="cassola">Cassola</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="peix" name="peix">
+                    <label for="peix">Peix</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="carn" name="carn">
+                    <label for="carn">Carn</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cassola" name="cassola">
+                    <label for="cassola">Cassola</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="postres" name="postres">
+                    <label for="postres">Postres</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dolc" name="dolc">
+                    <label for="dolc">Dolç</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="salat" name="salat">
+                    <label for="salat">Salat</label>
+                </div>
             </div>
             <br>
-            <input type="checkbox" nom="privacitat" id="privacitat" class="labels">
-            <label for="privacitat">
+            <div class="enlacesLegales" >
+                <input type="checkbox" nom="privacitat" id="privacitat">
+                <label for="privacitat">
                 <!-- Important posar target _blank y el rel per obrirlo en una nova pestanya i no donar informació -->
-                <a href="https://www.pccomponentes.com/privacidad?srsltid=AfmBOorfoN3JsSS8BRzTkkNq5-q1c6gBDszhKcAywHKBRgTQ8Pawhg8V"
-                rel="noopener noreferrer" target="_blank" >Política de privacitat</a>
-            </label>
-            <input type="checkbox" nom="utilitat" id="utilitat" class="labels">
-            <label for="utilitat">
-                <a href="https://www.pccomponentes.com/condiciones-de-compra?srsltid=AfmBOorPk9OSso0QbPnZ4IRcY8VbTfhgj9K6rKZBzbqspw1NzoFX3_x2"
+                    <a href="https://www.pccomponentes.com/privacidad?srsltid=AfmBOorfoN3JsSS8BRzTkkNq5-q1c6gBDszhKcAywHKBRgTQ8Pawhg8V"
+                    rel="noopener noreferrer" target="_blank" >Política de privacitat</a>
+                </label>
+                <input type="checkbox" nom="utilitat" id="utilitat">
+                <label for="utilitat">
+                    <a href="https://www.pccomponentes.com/condiciones-de-compra?srsltid=AfmBOorPk9OSso0QbPnZ4IRcY8VbTfhgj9K6rKZBzbqspw1NzoFX3_x2"
                    rel="noopener noreferrer" target="_blank" >Termes d'utilitat</a>
-            </label>
-            <input type="checkbox" id="notificacio" name="notificacio" class="labels">
+                </label>
+            </div>
+            <input type="checkbox" id="notificacio" name="notificacio">
             <label for="notificacio">Vols rebre notificacions al correu?</label>
             <div id="container_boton_registro" >
                 <!-- Utilitzem type reset per borrar tot i submit per quan enviem -->

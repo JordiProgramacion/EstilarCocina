@@ -1,6 +1,13 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 /* Centramos el titulo */
-h1 {
-    margin: 5vh 0 0 37.80%;
+#formulario_container h1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 /* Estilo del container del formulario */
 #formulario_container {
@@ -8,13 +15,10 @@ h1 {
     border-radius: 2%;
     width: 60vh;
     height: 60vh;
-    margin-left: 36%;
-    margin-top: 2.5%;
+    display: flex;
+    justify-content: center;
     box-shadow: 10px 10px 20px oklch(38.967% 0.08974 59.536);
-}
-/* Una mica de marge perquè quedi bé */
-.labels {
-    margin-left: 5%;
+    margin: auto;
 }
 /* Quan es correcte color verd */
 #mail:valid {
@@ -29,7 +33,7 @@ h1 {
     border-radius: 3px;
 }
 #checkReceptes {
-    margin-left: 12%;
+    margin-left: 15.1%;
 }
 #container_boton_registro {
     margin-top: 7%;
@@ -42,6 +46,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.5s linear;
+    font-size: 1.05rem
 }
 #registro {
     width: 150px;
@@ -49,4 +54,33 @@ h1 {
 }
 .botones:hover {
     transform: scale(1.1);
+}
+#formularioRelleno {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+#formularioRelleno div label {
+    display: block;
+}
+#formularioRelleno div input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.inputTexto {
+    background-color: oklch(0.976 0.030 83);
+    width: 60%;
+    box-sizing: border-box;
+}
+.opciones {
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.enlacesLegales {
+    margin-left: 5%;
+}
+#notificacio {
+    margin-left: 5%;
 }

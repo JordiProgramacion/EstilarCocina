@@ -1,8 +1,66 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 #container {
     background-color: oklch(0.976 0.030 83);
     border-radius: 2%;
-    width: 60vh;
-    height: 60vh;
-    margin-left: 33%;
-    margin-top: 9.22%;
+    width: 45vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 20px oklch(38.967% 0.08974 59.536);
+    margin: auto;
+}
+#container h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Quan es correcte color verd */
+#email:valid {
+    color: green;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+/* Quan es incorrecte color vermell */
+#email:invalid {
+    color: red;
+    border: 2px solid red;
+    border-radius: 3px;
+}
+.labels {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.inputs {
+    display: grid;
+    margin-bottom: 8px;
+}
+.textRegistre {
+    font-size: 0.8rem;
+}
+#botonLogin {
+    border-color: oklch(0 0 0);
+    background-color: oklch(0.721 0.164 58);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.5s linear;
+    width: 25%;
+    height: 10%;
+}
+#botonLogin:hover {
+    transform: scale(1.1);
+}
+.botonDiv {
+    display: flex;
+    justify-content: center;
 }
