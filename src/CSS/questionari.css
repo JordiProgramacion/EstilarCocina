@@ -11,13 +11,13 @@ body {
 }
 /* Estilo del container del formulario */
 #formulario_container {
-    background-color: oklch(0.976 0.030 83);
+    background-color: white;
     border-radius: 2%;
     width: 60vh;
     height: 60vh;
     display: flex;
     justify-content: center;
-    box-shadow: 10px 10px 20px oklch(38.967% 0.08974 59.536);
+    box-shadow: 10px 10px 20px oklch(0.469 0.015 43.136);
     margin: auto;
 }
 /* Quan es correcte color verd */
@@ -46,7 +46,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.5s linear;
-    font-size: 1.05rem
+    font-size: 1.05rem;
 }
 #registro {
     width: 150px;

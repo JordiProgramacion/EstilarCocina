@@ -9,13 +9,13 @@ main {
     justify-content: center;
 }
 #container {
-    background-color: oklch(0.976 0.030 83);
+    background-color: white;
     border-radius: 2%;
     width: 45vh;
     height: 40vh;
     display: flex;
     justify-content: center;
-    box-shadow: 10px 10px 20px oklch(38.967% 0.08974 59.536);
+    box-shadow: 10px 10px 20px oklch(0.469 0.015 43.136);
     margin: auto;
 }
 #container h1 {
@@ -39,6 +39,9 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 8px;
+    /* Poner en negrita el texto
+    font-weight: bold;
+    */
 }
 .inputs {
     display: grid;
@@ -63,4 +66,7 @@ main {
 .botonDiv {
     display: flex;
     justify-content: center;
+}
+.inputsFondo {
+    background-color: oklch(0.976 0.030 83);
 }
