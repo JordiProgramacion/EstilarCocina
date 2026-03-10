@@ -121,3 +121,12 @@ footer strong{
     display: inline-block; /*He tenido que poner este display porque no se me completaba el hover.*/
     transition: 0.5s;
 }
+#modoNocturnoContainer {
+    position: relative;
+    margin-top: -35px;
+    margin-left: 140vh;
+}
+#nocturno {
+    width: 80px;
+    height: 30px;
+}
