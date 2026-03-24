@@ -16,6 +16,7 @@ console.log(document.querySelector('title'));
 console.log(document.querySelector('#centrarTitulo'));
 */
 // BOTON DE MODO OSCURO/CLARO
+
 const nocturn = document.getElementById('nocturno');
 const fons = document.body;
 const pieDePagina = document.getElementById('footerJavascript');
